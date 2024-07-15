@@ -1,0 +1,27 @@
+.parent{
+    background-color: rgb(22, 62, 62);
+    display: grid;
+
+    grid-template-columns:repeat(4,1fr) ;
+    grid-template-rows: repeat(5,100px);
+    gap: 10px;
+}
+.parent div{
+    background-color: rgb(159, 95, 95);
+}
+.header{
+    grid-column: 1/-1;
+    
+}
+.slidebar{
+    grid-row: 2/-1;
+}
+.content1{
+    grid-column: 2/-1;
+}
+.footer1{
+    grid-column: 2/4;
+}
+.footer1,.footer2{
+    grid-row: 4/6;
+}
